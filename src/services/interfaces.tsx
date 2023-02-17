@@ -5,4 +5,12 @@ export interface ButtonProps {
     img: string;
     fontColor: string;
     imgBorderColor: string;
+    isActive: boolean;
+    handleClick?(id: number): void;
+}
+
+export interface ButtonsStats {
+    1: number;
+    2: number;
+    3: number;
 }

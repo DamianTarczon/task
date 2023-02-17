@@ -5,7 +5,8 @@ export default [
         text: "Big, small, online, offline, local or international. Size doesn't matter. We work on diverse projects for top brands.",
         img: "fingerprint.svg",
         fontColor: '#0046CB',
-        imgBorderColor: '#AABEE5'
+        imgBorderColor: '#AABEE5',
+        isActive: false
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export default [
         text: "Most popular type of partnership, limited liabilities. Size doesn't matter. We work on diverse projects for top brands.",
         img: "lock.svg",
         fontColor: '#FD7D86',
-        imgBorderColor: '#F0CED1'
+        imgBorderColor: '#F0CED1',
+        isActive: false
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export default [
         text: "Popular type of partnership, limited liabilities. Size doesn't matter. We work on diverse projects for top brands.",
         img: "user.svg",
         fontColor: '#00D793',
-        imgBorderColor: '#C4F0E2'
+        imgBorderColor: '#C4F0E2',
+        isActive: false
     }
 
 ]
