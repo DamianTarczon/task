@@ -1,6 +1,7 @@
 import './index.scss';
+import { ButtonProps } from '../../../services/interfaces';
 
-export default function Button(props: any){
+export default function Button(props: ButtonProps){
     return(
         <div className='button'>
             <div className='button-img-and-title'>
