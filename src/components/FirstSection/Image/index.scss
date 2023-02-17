@@ -1,0 +1,11 @@
+.img{
+    width: 55%;
+    background-image: url('/assets/shapes.svg');
+    background-repeat: no-repeat;
+    background-size: 435px;
+    background-position: 10px 15px;
+    overflow: hidden;
+    .phone-img{
+        width: 150%;
+    }
+}
