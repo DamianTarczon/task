@@ -20,7 +20,7 @@ export default [
     {
         id: 4,
         image: 'reviews.svg',
-        number: 3556,
+        number: 3565,
         text: 'Total Reviews'
     }
 ]

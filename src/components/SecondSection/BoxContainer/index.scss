@@ -1,5 +1,24 @@
+@import '../../../styles/config';
+
 .box-container{
-    transform: skewY(-3deg);
+    transform: skewY(-2deg);
     display: flex;
     gap: 100px;
+}
+
+@media (max-width: $large){
+    .box-container{
+        width: 400px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: $small){
+    .box-container{
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 }
