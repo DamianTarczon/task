@@ -1,16 +1,24 @@
+@import '../../../styles/config';
+
 .title-component{
     text-align: center;
     max-width: 450px;
     .first-text{
-        color: #0046CB;
+        color: $blue;
     }
     .second-text{
         font-size: 28px;
-        color: #282835;
+        color: $dark;
         margin-top: -5px;
         margin-bottom: -5px;
     }
     .third-text{
-        color: #818992;
+        color: $lightGray;
+    }
+}
+
+@media(max-width: $medium){
+    .title-component{
+        width: 250px;
     }
 }

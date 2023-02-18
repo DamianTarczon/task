@@ -1,11 +1,20 @@
+@import '../../../styles/config'; 
+
 .img{
-    width: 55%;
+    width: 590px;
     background-image: url('/assets/shapes.svg');
     background-repeat: no-repeat;
     background-size: 435px;
     background-position: 10px 15px;
     overflow: hidden;
     .phone-img{
-        width: 150%;
+        width: 120%;
+    }
+}
+
+
+@media (max-width: $xlarge){
+    .img{
+        display: none;
     }
 }
