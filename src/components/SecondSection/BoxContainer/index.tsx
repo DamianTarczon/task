@@ -3,6 +3,7 @@ import Box from '../Box';
 import boxData from '../../../data/boxData';
 import { BoxProps } from '../../../services/interfaces';
 
+
 export default function BoxContainer(){
 
 const boxes = boxData.map((data: BoxProps) => {

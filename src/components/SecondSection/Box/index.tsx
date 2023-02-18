@@ -1,8 +1,10 @@
 import './index.scss';
 import { BoxProps } from '../../../services/interfaces';
 import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 export default function Box(props: BoxProps){
+    const { ref: myRef, inView: elementVisible } = useInView();
 
     function ConvertNumber(number:number): number{
         if(number.toString().length < 3) return number
@@ -12,14 +14,15 @@ export default function Box(props: BoxProps){
 
 
     return(
-        <div className='box'>
+        <div ref={myRef} className={`box ${elementVisible ? 'show' : 'hidden'}`}>
             <img className='box-img' src={`/assets/${props.image}`} />
             <p className='number'>
                 <CountUp
                     start={0}
                     end={ConvertNumber(props.number)}
-                    duration={3}
+                    duration={4}
                     useEasing={true}
+                    redraw={elementVisible}
                 />
                 {props.number.toString().length > 4 ? 'K+' : props.number.toString().length > 2 ? '+' : ''}
             </p>
