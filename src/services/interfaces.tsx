@@ -14,3 +14,10 @@ export interface ButtonsStats {
     2: number;
     3: number;
 }
+
+export interface BoxProps {
+    id: number;
+    image: string;
+    number: number;
+    text: string;
+}
