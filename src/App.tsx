@@ -1,6 +1,7 @@
 import './App.scss'
 import FirstSection from './components/FirstSection'
 import SecondSection from './components/SecondSection'
+import ThirdSection from './components/ThirdSection'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
     </div>
   )
 }

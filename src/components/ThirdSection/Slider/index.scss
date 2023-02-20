@@ -1,0 +1,9 @@
+.slider{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    .arrow:hover{
+        cursor: pointer;
+    }
+}

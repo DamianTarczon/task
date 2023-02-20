@@ -1,11 +1,11 @@
 import './index.scss';
-import Content from '../Content';
+import ButtonsContent from '../ButtonsContent';
 import Image from '../Image';
 
 export default function ContentWithImage(){
     return(
         <div className='content-with-img-component'>
-            <Content />
+            <ButtonsContent />
             <Image />
         </div>
     );
