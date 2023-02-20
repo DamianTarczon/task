@@ -21,3 +21,9 @@ export interface BoxProps {
     number: number;
     text: string;
 }
+
+export interface TitleProps {
+    firstText: string;
+    secondText: string;
+    thirdText: string;
+}

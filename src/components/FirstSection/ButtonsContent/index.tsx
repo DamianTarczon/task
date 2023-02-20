@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { ButtonsStats } from '../../../services/interfaces';
 
 export default function Content(){
-    const [buttons, setButtons] = useState(buttonsData);
+    const [buttons, setButtons] = useState<ButtonProps[]>(buttonsData);
     const [buttonsStats, setButtonsStats] = useState<ButtonsStats>({
         1: 0,
         2: 0,
@@ -24,7 +24,6 @@ export default function Content(){
             }
         })
     }
-    console.log(buttonsStats)
 
     const buttonComponents = buttons.map((button: ButtonProps) => {
         return(
@@ -42,6 +41,7 @@ export default function Content(){
         );
     });
 
+    console.log(buttonsStats)
 
     return(
         <div className='buttons-content'>

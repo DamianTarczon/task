@@ -1,6 +1,6 @@
 import './index.scss';
 
-export default function PhoneCardsContainer(props: any){
+export default function PhoneCardsContainer(props: { phoneContent: string[]; }){
     return (
         <div className='phone-card-container'>
             <span className='phone-card-standard'><img src={props.phoneContent[0]} /></span>

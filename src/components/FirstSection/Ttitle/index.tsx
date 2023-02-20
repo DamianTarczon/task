@@ -1,6 +1,7 @@
+import { TitleProps } from '../../../services/interfaces';
 import './index.scss';
 
-export default function Title(props: any){
+export default function Title(props: TitleProps){
     return(
         <div className='title-component'>
             <p className='first-text'>{props.firstText}</p>

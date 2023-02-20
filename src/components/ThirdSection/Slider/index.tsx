@@ -3,7 +3,7 @@ import PhoneCardsContainer from '../PhoneCardsContainer';
 import './index.scss';
 
 export default function Slider(){
-    const [phoneContent, setPhoneContent] = useState([
+    const [phoneContent, setPhoneContent] = useState<string[]>([
         '/assets/phoneCardContent3.png', 
         '/assets/phoneCardContent2.png', 
         '/assets/phoneCardContent1.png', 
