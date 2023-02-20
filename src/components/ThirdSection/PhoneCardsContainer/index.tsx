@@ -3,11 +3,11 @@ import './index.scss'
 export default function PhoneCardsContainer(){
     return (
         <div className='phone-card-container'>
-            <div className='phone-card'>Card</div>
-            <div className='phone-card'>Card</div>
-            <div className='phone-card'>Card</div>
-            <div className='phone-card'>Card</div>
-            <div className='phone-card'>Card</div>
+            <span className='phone-card-standard'>Card</span>
+            <span className='phone-card-standard'>Card</span>
+            <span className='phone-card-highlighted'>Card</span>
+            <span className='phone-card-standard'>Card</span>
+            <span className='phone-card-standard'>Card</span>
         </div>
     );
 }

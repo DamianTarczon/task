@@ -1,10 +1,41 @@
 .phone-card-container{
     display: flex;
-    .phone-card{
-        width: 100px;
-        height: 200px;
-        border: 1px solid black;
-        border-radius: 10px;
+    align-items: center;
+    
+
+
+    .phone-card-highlighted{
+        background-image: url('/assets/highlightedPhoneCard.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 203px;
+        z-index: 3;
         text-align: center;
     }
+
+    .phone-card-standard{
+        background-image: url('/assets/standardPhoneCard.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 340px;
+        width: 173px;
+        text-align: center;
+    }
+
+    span:nth-child(1), span:nth-child(2){
+        margin-right: -40px;
+        z-index: 2;
+    }
+    
+    span:nth-child(4){
+        margin-left: -40px;
+        z-index: 2;
+    }
+    
+    span:nth-child(5){
+        margin-left: -40px;
+        z-index: 1;
+    }
 }
+
