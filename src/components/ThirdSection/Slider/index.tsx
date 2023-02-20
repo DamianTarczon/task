@@ -11,12 +11,12 @@ export default function Slider(){
         '/assets/phoneCardContent5.png'
     ]);
 
-    function handleClickLeft(){
+    function handleClickRight(){
         const newPhoneContent= phoneContent.slice(1).concat(phoneContent.slice(0,1));
         setPhoneContent(newPhoneContent);
     }
 
-    function handleClickRight(){
+    function handleClickLeft(){
         const newPhoneContent= phoneContent.slice(4).concat(phoneContent.slice(0,4));
         setPhoneContent(newPhoneContent);
     }
