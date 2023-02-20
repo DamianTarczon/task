@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     
-
-
     .phone-card-highlighted{
         background-image: url('/assets/highlightedPhoneCard.svg');
         background-repeat: no-repeat;
@@ -11,7 +9,12 @@
         height: 400px;
         width: 203px;
         z-index: 3;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 91%;
+        }
     }
 
     .phone-card-standard{
@@ -20,7 +23,12 @@
         background-size: cover;
         height: 340px;
         width: 173px;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 90%;
+        }
     }
 
     span:nth-child(1), span:nth-child(2){

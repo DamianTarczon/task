@@ -12,7 +12,6 @@ export default function Box(props: BoxProps){
         return Math.floor((number/100))*100;
     }
 
-
     return(
         <div ref={myRef} className={`box ${elementVisible ? 'show' : 'hidden'}`}>
             <img className='box-img' src={`/assets/${props.image}`} />
