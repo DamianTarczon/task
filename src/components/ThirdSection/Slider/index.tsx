@@ -11,20 +11,21 @@ export default function Slider(){
         '/assets/phoneCardContent5.png'
     ]);
 
+    const [goToSlide, setGoToSlide] = useState<number>(0);
+
     function handleClickRight(){
-        const newPhoneContent= phoneContent.slice(1).concat(phoneContent.slice(0,1));
-        setPhoneContent(newPhoneContent);
+        setGoToSlide(goToSlide + 1);
     }
 
     function handleClickLeft(){
-        const newPhoneContent= phoneContent.slice(4).concat(phoneContent.slice(0,4));
-        setPhoneContent(newPhoneContent);
+        setGoToSlide(goToSlide - 1)
     }
 
     return(
         <div className='slider'>
             <img className='arrow' onClick={handleClickLeft} src='/assets/leftArrow.svg' />
             <PhoneCardsContainer 
+                goToSlide={goToSlide}
                 phoneContent={phoneContent}
             />
             <img className='arrow' onClick={handleClickRight} src='/assets/rightArrow.svg' />
