@@ -4,7 +4,10 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
 export default function Box(props: BoxProps){
-    const { ref: myRef, inView: elementVisible } = useInView();
+    const { ref: myRef, inView: elementVisible } = useInView({
+        triggerOnce: true,
+        threshold: 1
+    });
 
     function ConvertNumber(number:number): number{
         if(number.toString().length < 3) return number

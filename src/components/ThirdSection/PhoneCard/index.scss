@@ -1,0 +1,54 @@
+@import '../../../styles/config';
+
+.phone-card-highlighted{
+    background-image: url('/assets/highlightedPhoneCard.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 278px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -8px;
+    .highlighted-img{
+        margin-left: 4px;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+
+.standard{
+    background-image: url('/assets/standardPhoneCard.svg');
+}
+
+@media (max-width: $xlarge){
+    .phone-card-container{
+        width: 450px;
+        height: 230px;
+        .phone-card-highlighted{
+            height: 402px;
+            width: 203px;
+            margin-bottom: -8px;
+            .highlighted-img{
+                margin-left: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: $medium){
+    .phone-card-container{
+        width: 225px;
+        height: 115px;
+        .phone-card-highlighted{
+            height: 201px;
+            width: 101px;
+            margin-bottom: -4px;
+            .highlighted-img{
+                margin-left: 0px;
+            }
+        }
+    }
+}
