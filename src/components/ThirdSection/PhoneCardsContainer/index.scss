@@ -4,54 +4,6 @@
     display: flex;
     align-items: center;
     
-    .phone-card-highlighted{
-        background-image: url('/assets/highlightedPhoneCard.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 402px;
-        width: 203px;
-        z-index: 5;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: -8px;
-        .highlighted-img{
-            height: 91%;
-        }
-    }
-
-    .highlighted-shadow{
-        width: 100%;
-        z-index: 1;
-        position: relative;
-    }
-
-    .phone-card-standard{
-        background-image: url('/assets/standardPhoneCard.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 340px;
-        width: 173px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-        margin-bottom: -12px;
-        position: relative;
-        .standard-img{
-            height: 90%;
-        }
-    }
-
-    .standard-shadow{
-        width: 90%;
-        margin-left: 8px;
-        z-index: 1;
-    }
-
     span:nth-child(1), span:nth-child(2){
         margin-right: -40px;
         z-index: 2;
@@ -70,22 +22,6 @@
 
 @media (max-width: $large){
     .phone-card-container{
-        .phone-card-highlighted{
-            height: 210px;
-            width: 106px;
-            margin-bottom: -12px;
-        }
-        
-        .phone-card-standard{
-            height: 176px;
-            width: 89px;
-            margin-bottom: -14px;
-        }
-        .standard-shadow{
-            width: 80%;
-            margin-left: 2px;
-
-        }
         span{
             width: 106px;
         }

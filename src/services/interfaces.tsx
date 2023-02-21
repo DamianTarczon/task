@@ -27,3 +27,11 @@ export interface TitleProps {
     secondText: string;
     thirdText: string;
 }
+
+export interface PhoneCardProps {
+    divClassName: string;
+    phoneImgClassName: string;
+    phoneImgSrc: string;
+    shadowImgClassName: string;
+    shadowImgSrc: string;
+}
